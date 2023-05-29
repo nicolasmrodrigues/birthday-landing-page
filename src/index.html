@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans&family=Rubik:wght@700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <title>Happy Birthday</title>
 </head>
 <body>
@@ -37,7 +38,7 @@
             </div>
         </div>
     </section>
-    <section class="location section">
+    <section data-aos="fade-up" class="location section">
         <div class="image-container">
             <img class="image" src="images/mall.jpg" alt="">
         </div>
@@ -51,12 +52,12 @@
             <a href="#" class="button button--secondary">Read More</a>
         </div>
     </section>
-    <section class="send-your-gift section">
+    <section data-aos="fade-up" class="send-your-gift section">
         <div class="image-container">
             <img class="location__image image" src="images/gifts.jpeg" alt="">
         </div>
         <div class="text-container">
-            <h2 class="title title--medium">Send your Gift</h2>
+            <h2 class="title title--secondary title--medium">Send your Gift</h2>
             <p class="text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda esse ad, nisi sint veritatis consequatur hic voluptatem quo dolore. Neque, doloremque soluta quibusdam animi autem molestias dolorem praesentium voluptate.
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla soluta porro delectus sed, expedita iusto! Aliquam, laboriosam incidunt? Accusamus nostrum numquam tempora aliquam inventore necessitatibus eius quaerat reprehenderit, laudantium animi!
@@ -66,5 +67,9 @@
         </div>
     </section>
     <script src="https://kit.fontawesome.com/7ced5a16e0.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
