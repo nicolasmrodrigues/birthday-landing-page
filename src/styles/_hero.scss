@@ -1,0 +1,94 @@
+.hero {
+    width: 100%;
+    height: 100dvh;
+    position: relative;
+    padding: 150px 0px 60px 0px;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .social-medias {
+        margin-top: 24px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        
+        &__list {
+            display: flex;
+            gap: 24px;
+        }
+    }
+
+    &__container {
+        margin: 0 auto;
+        color: rgb(255, 192, 203);
+        position: relative;
+        max-width: 710px;
+        width: 100%;
+    }
+
+    &__text-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    &__text {
+        color: rgb(211, 162, 170);
+        text-align: center;
+        font-family: 'Instrument Sans', sans-serif;
+    }
+
+    &__button-group {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        gap: 20px;
+    }
+
+    &__title {
+        color: rgb(255, 192, 203);
+    }
+
+    &__button {
+        text-decoration: none;
+        color: #f9f9f9;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 14px 10px;
+        min-width: 150px;
+        text-align: center;
+        border-radius: 4px;
+        background-color: #539096;
+        transition: background-color .3s ease;
+        
+        &:hover {
+            background-color: #44767b;
+        }
+    }
+
+    &__subtitle {
+        display: block;
+        width: 110px;
+        margin: 40px auto 0 auto;
+    }
+
+    &__birthday-day {
+        display: flex;
+        line-height: 80px;
+        margin: 0 auto;
+        font-size: 100px;
+        justify-content: center;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: .7;
+    }
+}

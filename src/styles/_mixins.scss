@@ -1,0 +1,19 @@
+@mixin title($size) {
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+    font-size: $size;
+}
+
+.title {
+    &--big {
+        @include title(80px);
+    }
+
+    &--medium {
+        @include title(26px);
+    }
+
+    &--small {
+        @include title(20px);
+    }
+}
