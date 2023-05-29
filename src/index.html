@@ -37,6 +37,9 @@
                 <h2 class="hero__subtitle title title--small">February <span class="hero__birthday-day">6</span></h2>
             </div>
         </div>
+        <div class="hero__arrow-down">
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
     </section>
     <div class="sections">
         <section class="location section">
@@ -72,6 +75,16 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+        let arrow = document.getElementsByClassName('hero__arrow-down')[0]
+        document.addEventListener('DOMContentLoaded', function() {
+            window.onscroll = function() {
+                if (scrollY > 100) {
+                    arrow.style.opacity = '0';
+                } else {
+                    arrow.style.opacity = '1';
+                }
+            }
+        })
     </script>
 </body>
 </html>

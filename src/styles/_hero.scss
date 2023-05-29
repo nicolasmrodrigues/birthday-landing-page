@@ -52,6 +52,18 @@
         color: rgb(255, 192, 203);
     }
 
+    &__arrow-down {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: #f9f9f9;
+        font-size: 24px;
+        margin-top: 64px;
+        animation: up-and-down 1.5s ease-in-out infinite;
+        opacity: 1;
+        transition: opacity .3s ease-in-out;
+    }
+
     &__subtitle {
         display: block;
         width: 110px;
@@ -75,5 +87,16 @@
         height: 100%;
         background-color: #000;
         opacity: .7;
+    }
+}
+
+@keyframes up-and-down {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 14px);
     }
 }
