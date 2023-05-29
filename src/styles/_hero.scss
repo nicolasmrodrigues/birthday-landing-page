@@ -44,27 +44,12 @@
         gap: 20px;
     }
 
-    &__title {
-        color: rgb(255, 192, 203);
+    &__button {
+        margin-top: 24px;
     }
 
-    &__button {
-        text-decoration: none;
-        color: #f9f9f9;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 500;
-        text-transform: uppercase;
-        display: inline-block;
-        padding: 14px 10px;
-        min-width: 150px;
-        text-align: center;
-        border-radius: 4px;
-        background-color: #539096;
-        transition: background-color .3s ease;
-        
-        &:hover {
-            background-color: #44767b;
-        }
+    &__title {
+        color: rgb(255, 192, 203);
     }
 
     &__subtitle {

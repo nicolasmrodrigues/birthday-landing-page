@@ -17,3 +17,74 @@
         @include title(20px);
     }
 }
+
+@mixin section {
+    display: flex;
+    margin: 48px;
+    .image-container {
+        max-width: 500px;
+        width: 100%;
+
+        .image {
+            max-width: 500px;
+            max-height: 350px;
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+        }
+    }
+
+    .text-container {
+        margin-left: 24px;
+        max-width: 600px;
+    }
+
+    .text {
+        color: #5e615f;
+        font-family: 'Source Sans Pro', sans-serif;
+        margin-top: 4px;
+    }
+
+    .title {
+        color: #d5586e;
+    }
+    
+    .button {
+        margin-top: 24px
+    }
+}
+
+.section {
+    @include section;
+}
+
+@mixin button {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 14px 10px;
+    min-width: 150px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #539096;
+    transition: background-color .3s ease;
+    
+    &:hover {
+        background-color: #44767b;
+    }
+
+    &--secondary {
+        background-color: #d5586e;
+
+        &:hover {
+            background-color: #c94f66;
+        }
+    }
+}
+
+.button {
+    @include button;
+}
