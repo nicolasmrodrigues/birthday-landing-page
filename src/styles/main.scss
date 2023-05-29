@@ -1,5 +1,7 @@
 @use 'mixins';
 @use 'hero';
+@use 'gifts';
+@use 'sections';
 
 *, *::before, *::after {
     margin: 0;
