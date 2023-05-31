@@ -6,19 +6,23 @@
 
 .title {
     &--big {
-        @include title(80px);
+        @include title(5vw);
 
         @media (max-width: 768px) {
-            @include title(40px)
+            @include title(10vw)
         }
     }
 
     &--medium {
-        @include title(26px);
+        @include title(4vw);
+
+        @media (min-width: 1024px) {
+            @include title(2vw);
+        }
     }
 
     &--small {
-        @include title(20px);
+        @include title(1.4vw);
     }
 }
 
