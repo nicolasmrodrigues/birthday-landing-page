@@ -7,6 +7,10 @@
 .title {
     &--big {
         @include title(80px);
+
+        @media (max-width: 768px) {
+            @include title(40px)
+        }
     }
 
     &--medium {
@@ -22,6 +26,11 @@
     display: flex;
     position: relative;
     margin-bottom: 48px;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+
     .image-container {
         max-width: 500px;
         width: 100%;
@@ -38,6 +47,10 @@
     .text-container {
         margin-left: 24px;
         max-width: 600px;
+
+        @media (max-width: 768px) {
+            margin: 16px 0 0 0;
+        }
     }
 
     .text {
