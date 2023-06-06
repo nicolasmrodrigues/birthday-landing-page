@@ -14,27 +14,27 @@
 <body>
     <section class="hero">
         <div class="hero__container">
-            <h1 class="hero__title title title--big">It's my <span class="special-text">Birthday</span></h1>
+            <h1 class="hero__title title title--big">É meu <span class="special-text">Aniversário</span></h1>
             <div class="hero__text-container">
-                <p class="hero__text text">When you sit down with a blank birthday greeting card in front of you, don’t be surprised if you can’t seem to put pen to paper.</p>
+                <p class="hero__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam numquam laboriosam suscipit beatae dolorum minus natus</p>
                 <div class="hero__button-group">
-                    <a href="#" class="hero__button button">Cofirm your attendance</a>
-                    <a href="#" class="hero__button button">Read More</a>
+                    <a class="hero__button button">Confirme sua presença</a>
+                    <a class="hero__button button">Leia Mais</a>
                 </div>
                 <div class="social-medias">
                     <ul class="social-medias__list">
                         <li class="social-medias__item">
-                            <i class="fa-brands fa-facebook-messenger"></i>
+                            <i class="social-medias__icon fa-brands fa-facebook-messenger"></i>
                         </li>
                         <li>
-                            <i class="fa-brands fa-facebook"></i>
+                            <i class="social-medias__icon fa-brands fa-facebook"></i>
                         </li>
                         <li>
-                            <i class="fa-brands fa-instagram"></i>
+                            <i class="social-medias__icon fa-brands fa-instagram"></i>
                         </li>
                     </ul>
                 </div>
-                <h2 class="hero__subtitle title title--small">February <span class="hero__birthday-day">6</span></h2>
+                <h2 class="hero__subtitle title title--small">Fevereiro <span class="hero__birthday-day">6</span></h2>
             </div>
         </div>
         <div class="hero__arrow-down">
@@ -43,52 +43,40 @@
     </section>
     <div class="sections">
         <section class="location section">
-            <div class="fade" data-aos="fade-up">
+            <div class="container" data-aos="fade-up">
                 <div class="image-container">
                     <img class="image" src="images/mall.jpg" alt="">
                 </div>
                 <div class="text-container">
-                    <h2 class="title title--medium">location</h2>
+                    <h2 class="title title--medium">Local</h2>
                     <p class="text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda esse ad, nisi sint veritatis consequatur hic voluptatem quo dolore. Neque, doloremque soluta quibusdam animi autem molestias dolorem praesentium voluptate.
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla soluta porro delectus sed, expedita iusto! Aliquam, laboriosam incidunt? Accusamus nostrum numquam tempora aliquam inventore necessitatibus eius quaerat reprehenderit, laudantium animi!
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <a href="#" class="button button--secondary">Read More</a>
+                    <a class="button button--secondary">Leia Mais</a>
                 </div>
             </div>
         </section>
         <section class="send-your-gift section">
-            <div class="fade" data-aos="fade-up">
+            <div class="container" data-aos="fade-up">
                 <div class="image-container">
                     <img class="location__image image" src="images/gifts.jpeg" alt="">
                 </div>
                 <div class="text-container">
-                    <h2 class="title title--secondary title--medium">Send your Gift</h2>
+                    <h2 class="title title--secondary title--medium">Envie seu presente</h2>
                     <p class="text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda esse ad, nisi sint veritatis consequatur hic voluptatem quo dolore. Neque, doloremque soluta quibusdam animi autem molestias dolorem praesentium voluptate.
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla soluta porro delectus sed, expedita iusto! Aliquam, laboriosam incidunt? Accusamus nostrum numquam tempora aliquam inventore necessitatibus eius quaerat reprehenderit, laudantium animi!
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <a href="#" class="button">Send your gift</a>
+                    <a class="button">Envie seu presente</a>
                 </div>
             </div>
         </section>
     </div>
     <script src="https://kit.fontawesome.com/7ced5a16e0.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-        let arrow = document.getElementsByClassName('hero__arrow-down')[0]
-        document.addEventListener('DOMContentLoaded', function() {
-            window.onscroll = function() {
-                if (scrollY > 100) {
-                    arrow.style.opacity = '0';
-                } else {
-                    arrow.style.opacity = '1';
-                }
-            }
-        })
-    </script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

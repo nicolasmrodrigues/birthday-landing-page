@@ -1,7 +1,5 @@
 @use 'mixins';
 @use 'hero';
-@use 'gifts';
-@use 'sections';
 
 *, *::before, *::after {
     margin: 0;
@@ -10,12 +8,23 @@
     list-style: none;
 }
 
-.fa-brands {
-    font-size: 20px;
-    color: #fff;
+body {
+    background-color: #273536;
+    height: 1615px;
 }
 
-.text {
-    font-size: 18px;
-    font-weight: 400;
+.sections {
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    position: relative;
+    padding: 48px;
+
+    @media (max-width: 767px) {
+        padding: 32px 12px 32px 12px;
+    }
+}
+
+.send-your-gift {
+    margin-bottom: 0;
 }
